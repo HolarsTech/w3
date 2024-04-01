@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <!-- <link href="css/style.css" rel="stylesheet"> -->
+        <style>
+            body{
+                background-color: aqua;
+            }
+            @media (min-width:500px) and (orientation:landscape) {
+                body{
+                    background-color: goldenrod;
+                    max-width: 100%;
+                    font-size: 20px;
+                }
+                
+            }
+            @media (min-height:1000px) and (orientation:portrait) {
+                body{
+                    background-color: gray;
+                    max-height: 100%;
+                }
+                
+            }
+            h1{
+                font-size: 40px;
+                color: blue;
+            }
+            div{
+                font-size: 40px;
+                text-align: center;
+                /* background-color: brown; */
+                
+                
+            }
+            .container{
+               
+                padding: 10px;
+                grid-template-areas: 'header header header header header'
+                'left body body body right'
+                'footer footer footer footer footer';
+                gap: 50px;
+                display: grid;
+                margin: 20px;
+               
+                
+            }
+          
+            .header{
+
+                grid-area: header;
+                background-color: darkcyan;
+            
+            }
+            .left{
+                grid-area: left;
+                background-color: blueviolet;
+
+            }
+            .body{
+                grid-area: body;
+                background-color: brown;
+
+            }
+            .right{
+                grid-area: right;
+                background-color: chartreuse;
+            }
+            .footer{
+                grid-area: footer;
+                background-color: crimson;
+            }
+
+        </style>
+    </head>
+    <body>
+        <h1>This is a simple web page</h1>
+
+        <div class="container">
+            <div class="header">  HEADER
+                <p>This is the header</p>
+                <a href="#">click here to register</a>
+            </div>
+            <div class="left">  LEFT
+                <p>This is the left bar</p>
+             </div>
+            <div class="body"> BODY
+                <p>This is the body of my page</p>
+            </div>
+            <div class="right"> RIGHT
+                <p>This is the right bar</p>
+            </div>
+            <div class="footer"> FOOTER
+                <p>This is the foooter</p>
+            </div>
+
+        </div>
+    
+    </body>
+</html>
